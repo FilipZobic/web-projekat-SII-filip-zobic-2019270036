@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0d9c73c6fc.js" crossorigin="anonymous"></script>
+
+<head>
+    
+    <title>Movies</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    
+    <link rel="stylesheet" href="./Main.css">
+    <link rel="stylesheet" href="./StartMenu.css">
+    <style>
+        #user-startMenu-heading {
+            font-size: 24px !important;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+
+<body id="user-startMenu-body">
+    <div class="cover"></div>
+    <form id="user-startMenu" action="">
+        <div class="cover"></div>
+        <div id="user-startMenu-heading">
+            <p>Add a producer</p>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input id="name" required type="text" placeholder="FIRST NAME">
+            <i class="fas fa-user-tie user-startMenu-inputIcons"></i>
+        </div>
+        <div class="user-startMenu-warning">
+            <p>Producer name is taken</p>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input id="surname" required type="text" placeholder="SURNAME">
+            <i class="fas fa-address-card user-startMenu-inputIcons"></i>
+        </div>
+        <div id="startMenu-button-container">
+            <button type="button" class="btn-startMenuCosmetics" id = "btn-back" >HOME</button>
+            <button class="btn-startMenuCosmetics" id = "btn-startMenu" >ADD</button>
+        </div>
+    </form>
+</body>
+
+<footer>
+
+</footer>
+
+<script src="AddProducer.js"></script>
+
+</html>

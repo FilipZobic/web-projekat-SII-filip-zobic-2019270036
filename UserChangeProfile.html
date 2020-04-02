@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0d9c73c6fc.js" crossorigin="anonymous"></script>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="StartMenu.css">
+    <style>
+        .btn-startMenuCosmetics{
+            display: inline-block !important;
+        }
+    </style>
+</head>
+
+
+<body id="user-startMenu-body">
+    <div class="cover"></div>
+    <form id="user-startMenu" action="">
+        <div class="cover"></div>
+        <div id="user-startMenu-heading">
+            
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input  id="name" required type="text" placeholder="FIRST NAME">
+            <i class="fas fa-user-tie user-startMenu-inputIcons"></i>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input  id="surname" required type="text" placeholder="SURNAME">
+            <i class="fas fa-address-card user-startMenu-inputIcons"></i>
+        </div>
+        <div  class="user-startMenu-iconContainer">
+            <input disabled id="username" required type="text" placeholder="USERNAME">
+            <i class="fas fa-user user-startMenu-inputIcons"></i>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input  id="password" required type="password" placeholder="PASSWORD">
+            <i class="fas fa-lock user-startMenu-inputIcons"></i>
+        </div>
+        <div class="user-startMenu-warning">
+            <p>All fields are required</p>
+        </div>
+        <div id="startMenu-button-container">
+            <button id="back" class="btn-startMenuCosmetics" id = "btn-startMenu" >back</button>
+            <button href="UserChageProfile.html" id="save" class="btn-startMenuCosmetics" id = "btn-startMenu" >save</button>
+        </div>
+    </form>
+</body>
+    
+<footer>
+    <script src='UserChangeProfile.js'></script>
+</footer>
+
+
+</html>

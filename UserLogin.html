@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0d9c73c6fc.js" crossorigin="anonymous"></script>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="StartMenu.css">
+
+    <style>
+    </style>
+</head>
+
+<body id="user-startMenu-body">
+    <div class="cover"></div>
+    <form id="user-startMenu" action="">
+        <div class="cover"></div>
+        <div id="user-startMenu-heading">
+            <i class="fas fa-users"></i>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input id="username" required type="text" placeholder="USERNAME">
+            <i class="fas fa-user user-startMenu-inputIcons"></i>
+        </div>
+        <div class="user-startMenu-warning-username user-startMenu-warning">
+            <p>Username does not exist.</p>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input id="password" required type="password" placeholder="PASSWORD">
+            <i class="fas fa-lock user-startMenu-inputIcons"></i>
+        </div>
+        <div class="user-startMenu-warning-password user-startMenu-warning">
+            <p>Wrong password.</p>
+        </div>
+
+        <style>
+            #regLink {
+                text-decoration: none;
+                text-align: left;
+                margin-bottom: 0 !important;
+                margin-left: -180px !important;
+                line-height: 1px;
+                z-index: 100000000000000;
+                cursor:pointer;
+            }
+            #regLink {
+                text-decoration: none;
+                color: yellowgreen !important;
+            }
+            #regLink a:hover{
+                text-decoration: underline;
+            }
+            #regLink a:visited{
+                color: yellowgreen !important;
+            }
+        </style>
+
+        <div id="regLink">
+            <a href="UserRegister.html">Register</a>
+        </div>
+        <div id="startMenu-button-container">
+            <button class="btn-startMenuCosmetics" id = "btn-startMenu">login</button>
+        </div>
+    </form>
+</body>
+
+<footer>
+
+</footer>
+
+<script src="UserLogin.js"></script>
+
+</html>

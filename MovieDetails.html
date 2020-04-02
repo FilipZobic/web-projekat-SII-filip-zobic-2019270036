@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0d9c73c6fc.js" crossorigin="anonymous"></script>
+
+<head>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="StartMenu.css">
+    <style>
+        .user-startMenu-heading {
+            font-size: 24px !important;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .frontView {
+            
+            display: flex;
+            z-index: 1000000;
+            width: 300px;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .frontView select {
+            display: block;
+        }
+
+        #user-startMenu {
+            height: 900px !important;
+        }
+
+        .frontView select {
+            margin-top: 9px;
+            
+        }
+
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        .user-startMenu-iconContainer,.frontView {
+            margin-left: -1100px;
+        }
+
+        .user-startMenu-heading p {
+            margin-left: -670px;
+        }
+
+
+        .btn-startMenuCosmetics {
+            
+            min-width: 200px;
+            max-width: 200px;
+        }
+
+        form {
+            background-repeat: no-repeat;
+            background-size: 700px 900px;
+        }
+
+        .cartAmountContainer {
+            
+            margin-bottom: -50px;
+            display: none;
+        }
+
+        .cartAmountContainer input {
+            
+            background-color: rgb(255, 176, 219) !important;
+        }
+        #startMenu-button-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #btn-addToCart{
+            margin-left: 5px;
+        }
+
+        #btn-modify{
+            margin-left: 5px;
+        }
+
+        select{
+            max-width: 300px;
+            min-width: 300px;
+        }
+
+
+
+    </style>
+</head>
+
+
+<body id="user-startMenu-body">
+    <div class="cover"></div>
+    <form id="user-startMenu" action="">
+        <div class="cover"></div>
+        <div class="user-startMenu-heading">
+            <p>Movie Details</p>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input disabled id="movieId" required type="text" placeholder="ID">
+            <i class="fas fa-fingerprint user-startMenu-inputIcons" style="padding-right: 0px !important; margin-left: -3px !important; padding-right: 13px !important;"></i>
+        </div>
+        <div class="user-startMenu-warning">
+            <p>Movie id is taken</p>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input disabled id="movieName" required type="text" placeholder="MOVIE NAME">
+            <i class="far fa-bookmark user-startMenu-inputIcons" ></i>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input disabled id="movieGenre" required type="text" placeholder="GENRE">
+            <i class="fas fa-theater-masks user-startMenu-inputIcons" style="padding-right: 0px !important; margin-left: -5px !important; padding-right: 7px !important;"></i>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input disabled id="movieDate" required type="number" placeholder="YEAR RELEASED">
+            <i class="far fa-calendar-alt user-startMenu-inputIcons"></i>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input disabled id="moviePrice" required type="text" placeholder="PRICE">
+            <i class="fas fa-dollar-sign user-startMenu-inputIcons" style="padding-right: 20px !important; padding-left: 4px !important;"></i>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input disabled id="movieStock" required type="text" placeholder="STOCK">
+            <i class="fas fa-box-open user-startMenu-inputIcons" style="padding-right: 0px !important; margin-left: -5px !important; padding-right: 7px !important;"></i>
+        </div>
+
+        <div class="user-startMenu-iconContainer">
+            <input disabled id="movieProducer" required type="text" placeholder="PRODUCER">
+            <i class="fas fa-user-alt user-startMenu-inputIcons" style="margin-left: -2px !important; padding-right: 12px !important;"></i>
+        </div>
+
+        <div class="user-startMenu-iconContainer cartAmountContainer">
+            <input name="cartAmount" type="number" id="cartAmount" required type="text" placeholder="AMOUNT">
+            <i class="fas fa-shopping-cart user-startMenu-inputIcons" style="margin-left: -5px !important; padding-right: 12px !important;"></i>
+        </div>
+
+        <div id="startMenu-button-container">
+            <button type="button" class="btn-startMenuCosmetics" id = "btn-back" >HOME</button>
+        </div>
+    </form>
+</body>
+<footer>
+
+</footer>
+
+<script src="MovieDetails.js"></script>
+
+</html>

@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    /* background: linear-gradient(to bottom right,#205ca0,rgb(3, 113, 141)); */
+    background: linear-gradient(to bottom right,#2c2c2c,rgb(43, 62, 66));
+    display: block;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.cover {
+    position: absolute;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*Search bar*/
+
+.SearchBar {
+
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-60% , -50%);
+    height: 100%;
+    width: 500px;
+    z-index: 100111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+
+}
+
+.SearchBar i {
+transition: 0.4s ease-in-out;
+font-size: 24px;
+
+}
+
+.SearchBar input{
+    border: none;
+    color: black;
+    height: 50px;
+    width: 400px;
+    border-radius: 20px;
+    padding-left: 15px;
+    border: 1px solid white;
+}
+
+.SearchBar input:focus{
+        outline: none;
+        border: 1px solid #e50914;
+}
+
+
+.SearchBar a {
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+    
+
+.SearchBar a button {
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: 51px;
+    border-radius: 20px;
+    width: 80px;
+    margin-left: -77px;
+    background-color: #e50914;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.SearchBar a button:hover{
+
+        outline: none;
+        
+    }
+.SearchBar a button:hover i{ 
+            transform: rotate(90deg);
+        }
+.SearchBar a button:hover:focus{
+        outline: none;
+    }
+
+    
+.SearchBar a button:hover i{
+        font-size: 24px;
+        transition: 0.4s ease-in-out;
+    }
+
+
+
+    body {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 80%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        margin: 0 auto;
+        margin-top: 50px;
+        transform: translate(-50%, -50%);
+    }
+
+    nav {
+        display: relative;
+        flex-direction: row;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        background: rgb(34, 41, 44);
+        box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    }
+
+    .navigationItems {
+        z-index: 10011101 !important;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul {
+        z-index: 10011102 !important;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        width: 720px;
+        height: 100%;
+        border-right: solid 1.5px #999;
+    }
+
+    nav ul li {
+        width: 120px;
+        display: inline-block;
+        height: 100%;
+        text-align: center !important;
+        
+    }
+
+    nav ul li a {
+        color: white;
+        font-weight: bold;
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 90px;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 17px;
+
+        overflow: hidden;
+    }nav ul li a span{
+        display: block;
+        transition: 0.4s ease-in;
+    }
+    nav ul li a:hover span {
+        transform: scale(1.2);
+    }
+
+    #userInfo {
+        z-index: 100000000;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 120px;
+        text-align: center;
+        display: inline-block;
+        height: 100%;
+        line-height: 70px;
+        color: white;
+    }
+
+    #userInfo span {
+        color: white;
+        display: block;
+        margin-top: -50px;
+    }
+
+    #userInfo span p {
+        display: inline;
+    }
+
+    #userInfo span p:hover {
+        cursor: pointer;
+        color: red;
+    }
+
+/*Scroll bar*/
+
+*::-webkit-scrollbar {
+    width: 0.2rem;
+    height: 8px;
+}
+ 
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+*::-webkit-scrollbar-thumb {
+  background-color: #a02020;
+  outline: 1px solid #a02020;
+}
+
+/* ================================ */
+
+select {
+    text-align: left;
+    padding-left: 3px;
+    width: 100%;
+    height: 50px;
+    font-size: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid #DCDCDC;
+    color: #ff2c2c;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
+  }
+
+  /* For IE <= 11 */
+  select::-ms-expand {
+    display: none; 
+  }
+
+  .select-icon {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 30px;
+    height: 36px;
+    pointer-events: none;
+    border: 2px solid #DCDCDC;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  .select-icon svg.icon {
+    transition: fill 0.3s ease;
+    fill: white;
+  }
+
+  select:hover,
+  select:focus {
+    
+    color: white;
+    background-color: #ff2c2c;
+    border-bottom-color: #ff3737;
+  }
+  select:hover ~ .select-icon,
+  select:focus ~ .select-icon {
+    background-color: white;
+    border-color: #DCDCDC;
+  }
+  select:hover ~ .select-icon svg.icon,
+  select:focus ~ .select-icon svg.icon {
+    fill: #DCDCDC;
+    
+  }

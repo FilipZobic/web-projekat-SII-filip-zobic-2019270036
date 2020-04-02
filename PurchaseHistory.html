@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+    
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0d9c73c6fc.js" crossorigin="anonymous"></script>
+
+<head>
+    <link rel="stylesheet" href="./Main.css">
+    <link rel="stylesheet" href="./StartMenu.css">
+    <link rel="stylesheet" href="./CartShowAndCheckout.css">
+
+
+    <style>
+        #totalPriceContainer {
+            left: 55%;
+            top: 50%;
+            transform: translate(-55%,-50%);
+        }
+
+        img {
+            max-width: 150px !important;
+            max-height: 150px !important;
+        }
+    </style>
+    
+</head>
+
+
+<body id="user-startMenu-body">
+    <nav>
+        <div id="coverNav" class="cover"></div>
+        <form class= 'SearchBar'>
+            <div class="frontView">
+                <select id="movieProducer" name="producerList" style="z-index: 10000000;">
+                    <option selected value="noSelect">Select Bill</option>
+                </select>
+            </div>
+            <a href="#">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </a>
+        </form>
+        <div class="navigationItems">
+            <ul>
+                <li><a href="./MainPage.html"> <span>Home</span> </a></li>
+                <li style="width: 130px;"><a href="./CartShow.html"> <span style="font-size: 13px;">CART</span> </a></li>
+                <!-- or make it automaticly -->
+            </ul>
+        </div>
+
+        <div id="totalPriceContainer">
+            <p id="totalPrice">Total price: <span>0$</span></p>
+        </div>
+
+        <div id="userInfo">
+            <p id="showWhoIsOnline">Anonymous</p>
+            <span> <p>logout</p> </span>
+        </div>
+    </nav>
+    <table>
+        <!-- thead tbody tfooter -->
+
+        
+        
+        <tbody>
+            <tr>
+                <th class="name"><p>Movie name</p></th>
+                <th class="producer"> <p>Producer</p> </th>
+                <th class="genre"> <p>Genre</p></th>
+                <th class="date"> <p>Release Date</p></th>
+                <th class="price"><p>Price</p></th>
+                <th class="input"><p>Amount</p></th>
+                <th class="sum"><p>Bill</p></th>
+                <th class="coverImg" ><p>Cover</p></th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<footer>
+
+</footer>
+
+<script src="PurchaseHistory.js"></script>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0d9c73c6fc.js" crossorigin="anonymous"></script>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+    <title>Movies</title>
+
+    <link rel="stylesheet" href="./Main.css">
+    <link rel="stylesheet" href="./StartMenu.css">
+    <link rel="stylesheet" href="./CartShowAndCheckout.css">
+    
+</head>
+
+
+<body id="user-startMenu-body">
+    <nav>
+        <div id="coverNav" class="cover"></div>
+        <div class="navigationItems">
+            <ul>
+                <li><a href="./MainPage.html"> <span>Home</span> </a></li>
+                <li style="width: 130px;"><a href="./PurchaseHistory.html"> <span style="font-size: 13px;">Bills</span> </a></li>
+                <li style="width: 130px;"><a id="updateAll" href="#"> <span style="font-size: 13px;">Update all</span> </a></li>
+                <li style="width: 130px;"><a href="#"> <span id="checkOut" style="font-size: 13px;">Checkout</span>  </a></li>
+                <!-- or make it automaticly -->
+            </ul>
+        </div>
+
+
+        <div id="totalPriceContainer">
+            <p id="totalPrice">Total price: <span>200$</span></p>
+        </div>
+
+        <div id="userInfo">
+            <p id="showWhoIsOnline">Anonymous</p>
+            <span> <p>logout</p> </span>
+        </div>
+    </nav>
+    <table>
+        <!-- thead tbody tfooter -->
+
+        
+        
+        <tbody>
+            <tr>
+                <th class="name"><p>Movie name</p></th>
+                <th class="producer"> <p>Producer</p> </th>
+                <th class="genre"> <p>Genre</p></th>
+                <th class="date"> <p>Release Date</p></th>
+                <th class="price"><p>Price</p></th>
+                <th class="input"><p>In cart</p></th>
+                <th class="max"><p>Stock</p></th>
+                <th class="sum"><p>Bill</p></th>
+                <th><p class="update"><span>update</span></p></th>
+                <th><p class="genre"><span>delete</span></p></th>
+                <th class="coverImg" ><p>Cover</p></th>
+            </tr>
+            <tr>
+                <td class="name"><p>Fight Club</p></td>
+                <td class="producer"> <p>Unknown</p> </td>
+                <td class="genre"> <p>Thriller</p></td>
+                <td class="date"> <p>15.01.1999</p></td>
+                <td class="price"><p>15$</p></td>
+                <td class="input"><input type="text"></td>
+                <td class="max"><p>150</p></td>
+                <td class="sum"><p>15*tect</p></td>
+                <td><p class="update"><span>update</span></p></td>
+                <td><p class="delete"><span>x</span></p></td>
+                <td class="coverImg" > <div class="coverImgCarousel"></div><img class="coverImgCarousel" src="./Pictures/fightclub.jpg" alt=""></td>
+            </tr>
+    
+            <tr>
+                <td class="name"><p>Fight Club</p></td>
+                <td class="producer"> <p>Unknown</p> </td>
+                <td class="genre"> <p>Thriller</p></td>
+                <td class="date"> <p>15.01.1999</p></td>
+                <td class="price"><p>15$</p></td>
+                <td class="input"><input type="text"></td>
+                <td class="max"><p>150</p></td>
+                <td class="sum"><p>15*tect</p></td>
+                <td><p class="update"><span>update</span></p></td>
+                <td><p class="delete"><span>x</span></p></td>
+                <td class="coverImg" > <div class="coverImgCarousel"></div><img class="coverImgCarousel" src="./Pictures/fightclub.jpg" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
+</body>
+
+<footer>
+
+</footer>
+
+<script src="CartShow.js"></script>
+
+</html>

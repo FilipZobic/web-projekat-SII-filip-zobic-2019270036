@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0d9c73c6fc.js" crossorigin="anonymous"></script>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="StartMenu.css">
+    <style>
+        .user-startMenu-heading {
+            font-size: 24px !important;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .frontView {
+            
+            display: flex;
+            z-index: 1000000;
+            width: 300px;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .frontView select {
+            display: block;
+        }
+
+        #user-startMenu {
+            height: 900px !important;
+        }
+
+        .frontView select {
+            margin-top: 9px;
+            
+        }
+
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+</head>
+
+
+<body id="user-startMenu-body">
+    <div class="cover"></div>
+    <form id="user-startMenu" action="">
+        <div class="cover"></div>
+        <div class="user-startMenu-heading">
+            <p>Add movie</p>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input id="movieId" required type="text" placeholder="ID">
+            <i class="fas fa-fingerprint user-startMenu-inputIcons" style="padding-right: 0px !important; margin-left: -3px !important; padding-right: 13px !important;"></i>
+        </div>
+        <div class="user-startMenu-warning">
+            <p>Movie id is taken</p>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input id="movieName" required type="text" placeholder="MOVIE NAME">
+            <i class="far fa-bookmark user-startMenu-inputIcons" ></i>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input id="movieGenre" required type="text" placeholder="GENRE">
+            <i class="fas fa-theater-masks user-startMenu-inputIcons" style="padding-right: 0px !important; margin-left: -5px !important; padding-right: 7px !important;"></i>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input id="movieDate" required type="number" placeholder="YEAR RELEASED">
+            <i class="far fa-calendar-alt user-startMenu-inputIcons"></i>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input id="moviePrice" required type="number" placeholder="PRICE">
+            <i class="fas fa-dollar-sign user-startMenu-inputIcons" style="padding-right: 20px !important; padding-left: 4px !important;"></i>
+        </div>
+        <div class="user-startMenu-iconContainer">
+            <input id="movieStock" required type="number" placeholder="STOCK">
+            <i class="fas fa-box-open user-startMenu-inputIcons" style="padding-right: 0px !important; margin-left: -5px !important; padding-right: 7px !important;"></i>
+        </div>
+
+        <div class="frontView">
+            <label class="user-startMenu-heading" for="movieProducer">Choose producer</label>
+            <select id="movieProducer" name="producerList" form="carform" style="z-index: 10000000;">
+                <option selected value="unknown">UNKNOWN</option>
+            </select>
+        </div>
+
+        <div class="frontView">
+            <label class="user-startMenu-heading">Choose cover</label>
+            <select id="movieCover" name="pictures">
+                
+            </select>
+        </div>
+        <div id="startMenu-button-container">
+            <button type="button" class="btn-startMenuCosmetics" id = "btn-back" >HOME</button>
+            <button class="btn-startMenuCosmetics" id = "btn-startMenu" >ADD</button>
+        </div>
+    </form>
+</body>
+
+<footer>
+
+</footer>
+
+<script src="MovieAdd.js"></script>
+
+</html>
