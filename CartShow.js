@@ -1,36 +1,4 @@
-// Get userLogin as user
-
-// Set userLogin when we delete them and update them
-
-// // After setUserLogin then setUsersUser 
-
-
-// Make input checker so it inputs only numbers greater then 0
-
-// Make it so if exedes maximun value set it to max value
-
-// willAdd if input was correctly inputed then true
-
-// when value was changed update input to orange
-
-
-// update uses willAdd if true updates only one of that zone
-
-// when value was save update input to white
-
-// use setUser use setUsersUser
-
-
-
-// checkout adds all items to bill and deletes them from user
-
-// adds bill to user [[{movie},amount,price,date]]
-
-//document.querySelector().parentElement.removeChild()
-
 let user = JSON.parse(localStorage.getItem('logedInUser'));
-
-// for td p elements
 
 var itemCreateBasic = function(elementClass,elementText,parentElement) {
 
@@ -50,6 +18,7 @@ var itemCreateInput = function(parentElement,copies) {
     input.value = copies;
     input.addEventListener('input',function() {
 
+
         let parent = this.parentElement.parentElement;
 
         let newValue = this.value;
@@ -63,7 +32,7 @@ var itemCreateInput = function(parentElement,copies) {
         }
     
     
-        if(newValue <= 0 || newValue == NaN || newValue == null) {
+        if(newValue <= 0 || isNaN(newValue) || newValue == null) {
             this.value = '';
         } else {
             this.value = newValue;
@@ -101,14 +70,11 @@ var itemCreateUpdate = function (parentElement) {
         let value = input.value;
         let cartID = parentElement.getAttribute('id')
 
-        console.log(cartID)
-
         if(value.length == 0){
             return
         }
 
         user.cart[cartID][1] = value;
-        console.log(user.cart)
         setDatabase()
         setTotalPriceDom()
 
@@ -128,7 +94,6 @@ var itemCreateUpdate = function (parentElement) {
 // Database manipulation
 
 let setUserLoginInfo = function() {
-    console.log(user.cart[0])
     localStorage.setItem('logedInUser',JSON.stringify(user));
 }
 
@@ -136,8 +101,6 @@ let getLogedInUserDatabaseIndex = function(usersUserId = user.username) {
     let users = JSON.parse(localStorage.getItem('users'));
     for (let i = 0; i < users.length; i++) {
         if (users[i].username == usersUserId) {
-            console.log(users[i])
-            console.log(usersUserId)
             return i;
         }
         
@@ -146,7 +109,6 @@ let getLogedInUserDatabaseIndex = function(usersUserId = user.username) {
 
 let setUsersInfo = function(databaseIndex,userUpdated = user) {
     let users = JSON.parse(localStorage.getItem('users'));
-    console.log(databaseIndex)
     users[databaseIndex] = userUpdated;
     localStorage.setItem('users',JSON.stringify(users));
 }
@@ -163,9 +125,6 @@ var o = 0
 
 var itemDelete = function(item) {
 
-    // remove it from user and users manipulate user global then set userLogin then set userDatabase
-    
-    // remove it from DOM
     let TR = this.parentElement.parentElement.parentElement;
 
     
@@ -210,9 +169,6 @@ var itemCreateImg = function (parentElement,cover) {
     
     let img = document.createElement('img');
     img.setAttribute('src',`./Pictures/${cover}`)
-
-    // let div = document.createElement('div');
-    // div.setAttribute('class','coverImgCarousel');
 
     let TD = document.createElement('td');
     TD.setAttribute('class','coverImg');
@@ -348,16 +304,8 @@ document.querySelector('#checkOut').addEventListener('click',function(){
     
     let bill = user.cart.splice(0);
     let billNu = JSON.parse(localStorage.getItem('billNumber'));
-
-
-    //price * amount
-    
-
-    // sums every total price in one
-
     
     bill.unshift([billNu,price])
-    console.log(bill)
     billNu++;
 
     user.bills.push(bill)
